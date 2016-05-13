@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About SH</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000
+            });
+        });
+    </script>
+
+  </head>
+
+  <body>
+    <!--
+    <ul id="menu">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+      <li data-menuanchor="secondPage" class=""><a href="#secondPage">Second section</a></li>
+      <li data-menuanchor="3rdPage"><a href="#3rdPage">Third section</a></li>
+      <li data-menuanchor="4thpage"><a href="#4thpage">Fourth section</a></li>
+    </ul>
+    -->
+    <div id="fullpage">
+      <div class="section" id="section1">
+        <div id="logo">
+          <img src="profile.jpg" alt="profile.jpg" />
+          <h1>白木 宏朋</h1>
+          <p>新米エンジニア</p>
+          <p>目下、Ruby on Rails勉強中</p><br />
+        </div>
+      </div>
+      <div class="section" id="section2">
+        <div class="slide" data-anchor="slide1">
+          <h1>WORKS</h1>
+          <img src="https://i.gyazo.com/7dda06b0df4d732b7eac3ef4deec79f0.gif" alt="https://gyazo.com/b8c8584901a4b26b9dea4dd726b4c732" class="img_work"/>
+          <br />
+          <img src="http://i.gzn.jp/img/2015/10/20/kanazawa-it-projection-mapping/top_m.jpg" alt="http://i.gzn.jp/img/2015/10/20/kanazawa-it-projection-mapping/top_m.jpg" class="img_work">
+        </div>
+        <div class="slide" data-anchor="slide2">
+           <h1>EXPERIENCE</h1>
+           <p>I has been through these</p>
+           <img src="java_logo.jpg" alt="png" class="lang_logo" />
+           <img src="processing_logo.png" alt="png" class="lang_logo" />
+           <img src="of_logo.jpg" alt="png" class="lang_logo" />
+           <img src="rails_logo.png" alt="png" class="lang_logo" />
+           <p>,etc.</p>
+           <p>But, I do not say that I can ...</p>
+           <p>I want to be able to say it !</p>
+           </div>
+        <div class="slide" data-anchor="slide3">
+          <h1>INTEREST</h1>
+          <p>I'm interested in Marketing !</p>
+          <p>I try to catch what persons want !</p>
+          <p>Everything for you !</p>
+        </div>
+        <div class="slide" data-anchor="slide4">
+          <h1>LIKE</h1>
+          <p>I like VIDEO</p>
+          <p>as</p>
+          <p>Film and TV , Art, etc.</p>
+          <div></div>
+          <p>AND</p>
+          <p>I like music !</p>
+          <p>No Music, No Life !</p>
+        </div>
+      </div>
+      <div class="section" id="section3">
+        <h1>FROM NOW ON</h1>
+        <p>I try CODE hard !</p>
+      </div>
+      <div class="section" id="section4">
+        <h1>CONTACT</h1>
+      </div>
+    </div>
+    
+    <link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="../vendors/jquery.easings.min.js"></script>
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="../vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../jquery.fullPage.js"></script>
+  </body>
+</html>
+
+
